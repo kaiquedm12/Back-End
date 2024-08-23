@@ -8,21 +8,20 @@ public class Personagem {
 
     public  void receberDano(int dano){
         vida -= dano;
-        if (vida <= 0) {
-            vida = 0;
-            System.out.println(nome + " foi derrotado!");
-        }
-
     }
     public void atacar(Personagem alvo) {
-           if (alvo.vida > 0){
-               alvo.receberDano(ataque);
-               if (alvo.vida == 0){
-                   System.out.println("Ataque de " + nome + " contra " + alvo.nome + " foi bem-sucedido!");
-               }
-           } else{
-               System.out.println("Ataque de " + nome + " falhou, pois " + alvo.nome + " já está derrotado.");
-           }
+        if (vida > 0) {  // Verifica se o personagem ainda está vivo
+            if (alvo.vida > 0) {
+                alvo.receberDano(ataque);
+                if (alvo.vida == 0) {
+                    System.out.println("Ataque de " + nome + " contra " + alvo.nome + " foi bem-sucedido!");
+                }
+            } else {
+                System.out.println("Ataque de " + nome + " falhou, pois " + alvo.nome + " já está derrotado.");
+            }
+        } else {
+            System.out.println(nome + " está morto e não pode atacar.");
+        }
     }
 
     public boolean personagemVivo(){
