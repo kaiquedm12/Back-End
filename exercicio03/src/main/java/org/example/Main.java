@@ -41,6 +41,13 @@ public class Main {
                     portoGrande.atracarBarco(barco);
                 }
             }
+            for (Barco barco : Barcos){
+                if (barco.tamanho <= 10){
+                    portoPequeno.desatracarBarco(barco);
+                }else{
+                    portoGrande.desatracarBarco(barco);
+                }
+            }
 
     }
 }
