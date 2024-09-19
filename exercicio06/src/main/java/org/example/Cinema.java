@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cinema {
-     List<Filme> filmesDisponiveis = new ArrayList<>();
-     List<Ingresso> ingressosVendidos = new ArrayList<>();
+     List<Filme> listaFilmes = new ArrayList<>();
+     List<Ingresso> ingressoVendido = new ArrayList<>();
 
     public void adicionarFilme(Filme filme) {
-        filmesDisponiveis.add(filme);
+        listaFilmes.add(filme);
     }
 
     public Filme buscarFilmePorNome(String nome) {
-        for (Filme filme : filmesDisponiveis) {
+        for (Filme filme : listaFilmes) {
             if (filme.getNome().equalsIgnoreCase(nome)) {
                 return filme;
             }
@@ -21,7 +21,7 @@ public class Cinema {
     }
 
     public boolean assentoDisponivel(String assento) {
-        for (Ingresso ingresso : ingressosVendidos) {
+        for (Ingresso ingresso : ingressoVendido) {
             if (ingresso.getAssento().equalsIgnoreCase(assento)) {
                 return false; // Assento já ocupado
             }
@@ -30,6 +30,6 @@ public class Cinema {
     }
 
     public void venderIngresso(Ingresso ingresso) {
-        ingressosVendidos.add(ingresso);
+        ingressoVendido.add(ingresso);
     }
 }
