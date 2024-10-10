@@ -22,9 +22,9 @@ public class DemoController {
         return "Olá" + " " + pessoa.getNome() + " " + pessoa.getSobrenome();
     }
 
-    @PostMapping("/test")
+    @PostMapping("/carros")
     @ResponseBody
-    public String test() throws IOException, InterruptedException {
+    public String carros() throws IOException, InterruptedException {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create("https://parallelum.com.br/fipe/api/v1"))
                 .header("User-Agent", "insomnia/10.0.0")

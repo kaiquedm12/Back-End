@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>fipe</artifactId>
+	<artifactId>semana08</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>fipe</name>
-	<description>tabela fipe</description>
+	<name>semana08</name>
+	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
