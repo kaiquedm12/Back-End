@@ -1,6 +1,0 @@
-Um ataque comum que pode acontecer em sistemas de backend é o ataque DDoS. Basicamente, esse tipo de ataque sobrecarrega o sistema com um grande número de acessos falsos ao mesmo tempo, fazendo com que ele fique lento ou até pare de funcionar, como se fosse uma fila enorme de pessoas querendo usar o serviço ao mesmo tempo.
-
-Um caso aconteceu em 2016, quando uma empresa chamada Dyn, sofreu um ataque DDoS. Por causa disso, sites muito conhecidos, como Twitter, Netflix etc. Ficaram fora do ar por várias horas. Milhões de pessoas não conseguiram acessar esses serviços, o que prejudicou tanto as empresas, que perderam dinheiro e credibilidade, quanto os usuários, que ficaram frustrados por não conseguirem usar os sites.
-
-
-TechCrunch: "How the 2016 Dyn DDoS attack changed the internet"
